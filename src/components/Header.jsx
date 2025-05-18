@@ -17,7 +17,7 @@ function Header({onSearch}) {
                 <input type="text" placeholder="Search" className="p-2 text-black bg-white" 
                 onChange={(e) => setSearch(e.target.value)} value = {textSearch}/>
                 <button className="p-2 text-white bg-red-600"
-                onClick={() => onSearch({textSearch})}>
+                onClick={() => onSearch(textSearch)}>
                     Search
                 </button>
             </div>
